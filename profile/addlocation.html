@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Hub - Edit Profile</title>
+    <link rel="stylesheet" href="profile1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <div class="logo">Beauty Hub</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Earn With Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#"><i class="fa-regular fa-circle-user fa-xl" ></i></a></li>
+            </ul>
+        </nav>
+    </header>   
+   <section>
+    <div class="sidebar">
+        <div class="circle">
+            <div class="circle1">Beauty Hub</div>
+        </div>
+        <br>
+        <br>
+        <ul>
+            <li><a href="profile1.html" class="active"><i class="fa fa-pencil"></i> Edit Profile</a></li>
+            <li><a href="notification.html"><i class="fa fa-bell"></i> Notification</a></li>
+            <li><a href="addlocation.html"><i class="fa fa-map-marker"></i> Add Address</a></li>
+            <li><a href="history.html"><i class="fa fa-history"></i> History</a></li>
+            <li><a href="profile2.html"><i class="fa fa-key"></i> Change Password</a></li>
+            <li><a href="#" id="logoutBtn"><i class="fa fa-sign-out"></i> Logout</a></li>
+            <div id="logoutPopup" class="popup">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <p>Are you sure you want to logout?</p>
+                    <button id="confirmLogout">Yes</button>
+                    <button id="cancelLogout">No</button>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <main>
+        <div class="edit-profile">
+        <h1>Add Address</h1> 
+        <h3>Drag the map to pin point your delivery location.</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.4856286724385!2d85.33616337525248!3d27.6713816762032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19e8af4a5fe3%3A0x963d00cdf478c6b6!2sNepal%20College%20of%20Information%20Technology!5e0!3m2!1sen!2snp!4v1721813337724!5m2!1sen!2snp" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <button class="btn-update">Add location</button>&nbsp;
+        <button type="button" class="btn-cancel">Cancel</button>
+
+    </main>
+        </div> 
+</section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Beauty Hub</h3>
+                <p><i class="fa-solid fa-envelope fa-xl"></i>&nbsp; beautyhub@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume fa-xl"></i>&nbsp; +977 986-87309</p>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                    <i class="fa-brands fa-tiktok fa-xl"></i>
+                    <i class="fa-brands fa-youtube fa-xl"></i>
+                    <i class="fa-brands fa-linkedin fa-xl"></i>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Become Beautician</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Features</h3>
+                <ul>
+                    <li><a href="#">Ease Service</a></li>
+                    <li><a href="#">Location Track</a></li>
+                    <li><a href="#">Rating & Feedback</a></li>
+                    <li><a href="#">Ease communicate</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Forum</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Beauty Hub. All rights Reserved</p>
+        </div>
+    </footer>
+    // logoutsection
+     <script>       
+    const logoutBtn = document.getElementById('logoutBtn');
+const logoutPopup = document.getElementById('logoutPopup');
+const closeBtn = document.querySelector('.close');
+const confirmLogout = document.getElementById('confirmLogout');
+const cancelLogout = document.getElementById('cancelLogout');
+
+// Show the popup when the logout button is clicked
+logoutBtn.addEventListener('click', () => {
+logoutPopup.style.display = 'block';
+});
+
+// Hide the popup when the close button is clicked
+closeBtn.addEventListener('click', () => {
+logoutPopup.style.display = 'none';
+});
+
+// Hide the popup when the cancel button is clicked
+cancelLogout.addEventListener('click', () => {
+logoutPopup.style.display = 'none';
+});
+
+// Perform logout action when the confirm button is clicked
+confirmLogout.addEventListener('click', () => {
+// Add your logout logic here
+alert('You have been logged out.');
+logoutPopup.style.display = 'none';
+});
+
+// Hide the popup when clicking outside the popup content
+window.addEventListener('click', (event) => {
+if (event.target == logoutPopup) {
+logoutPopup.style.display = 'none';
+}
+});
+</script>
+</body>
+</html>
