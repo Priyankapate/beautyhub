@@ -11,7 +11,7 @@
     <nav class="navbar">
       <div class="navdiv">
         <div>
-          <h2 class="nav-heading">Beauty Hub <img src="./images/flower.png" class="images"></h2>
+          <h2 class="nav-heading">Beauty Hub</h2>
         </div>
         <ul class="nav-list">
           <li class="nav-content"><a class="nav-link" href="#">Home</a></li>
@@ -32,10 +32,8 @@
     </nav>
     <div class="link-section">
       <div class="link-heading">
-        <a class="first" href="#">Services</a> >
-         <a class="second" href="#">HairCare</a> >
-        <a  class="third"href="#">Search </a>> 
-        <a class="fourth" href="#">Service Center</a>
+        <a href="#">Services</a> > <a href="#">HairCare</a> >
+        <a href="#">Search </a>> <a href="#">Service Center</a>
       </div>
 
       <div class="first-section">
@@ -58,23 +56,6 @@
                   <p class="details-desc">977-9841223678</p>
                 </div>
 
-                <div class="details-box">
-                  <img src="./images/time.svg" alt="number-icon" />
-                  <p class="details-desc">Opens at 6:00am -Closes at 6:00PM</p>
-                </div>
-                <div class="time-details">
-                  <div class="details-date-time">
-                    <p class="details-desc">Mon-Fri</p>
-                    <p class="details-desc">6 AM - 6 PM</p>
-                  </div>
-
-                  <div class="details-date-time">
-                    <p class="details-desc">Sat-Sun</p>
-                    <p class="details-desc">8 AM - 8 PM</p>
-                  </div>
-                </div>
-              </div>
-
               <div class="box-content">
                 <div class="box">
                   <img class="box-icon" src="./images/star.svg" alt="" />
@@ -94,7 +75,44 @@
                   <p class="box-review">Services Given</p>
                 </div>
               </div>
-
+              <div class="pricing-section">
+              <h2 class="pricing-heading">Pricing of our Services</h2>
+              <table class="pricing-table">
+                  <thead>
+                      <tr>
+                          <th class="service-header">Service</th>
+                          <th class="price-header">Price</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td class="service-cell">Hair Care</td>
+                          <td class="price-cell">Rs. 200</td>
+                      </tr>
+                      <tr>
+                          <td class="service-cell">Makeup</td>
+                          <td class="price-cell">Rs. 200</td>
+                      </tr>
+                      <tr>
+                          <td class="service-cell">Nail Service</td>
+                          <td class="price-cell">Rs. 200</td>
+                      </tr>
+                      <tr>
+                          <td class="service-cell">Facial</td>
+                          <td class="price-cell">Rs. 200</td>
+                      </tr>
+                      <tr>
+                          <td class="service-cell">Spa</td>
+                          <td class="price-cell">Rs. 200</td>
+                      </tr>
+                      <tr>
+                          <td class="service-cell">Skin Treatment</td>
+                          <td class="price-cell">Rs. 200</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+         
               <div class="reservation">
                 <h2>Make Reservation</h2>
               </div>
@@ -108,9 +126,26 @@
                 <img src="./images/image-2.png" alt="image2" />
               </div>
 
-              <div class="image-section-right">
-                <img src="./images/image-3.png" alt="image3" />
-              </div>
+              <div class="review-section">
+                <h2 class="review-heading">Give your review and ratings</h2>
+                <div class="star-rating">
+                    <span class="star"  onclick="gfg(1)"  data-value="1">★</span>
+                    <span class="star"  onclick="gfg(2)"  data-value="2">★</span>
+                    <span class="star"  onclick="gfg(3)" data-value="3">★</span>
+                    <span class="star"  onclick="gfg(4)"  data-value="4">★</span>
+                    <span class="star"  onclick="gfg(5)" data-value="5">★</span>
+
+                    <h3 id="output">
+                      Rating is: 0/5
+                  </h3>
+                </div>
+                <textarea class="review-text" placeholder="Write a review"></textarea>
+                <div class="button-container">
+                    <button class="btn make-reservation">Make Reservation</button>
+                    <button class="btn cancel">Cancel</button>
+                </div>
+            </div>
+            </div>
             </div>
           </div>
         </div>
