@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Kaisei HarunoUmi", serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 101px;
+  padding-top: 20px;
+  background-color: #365314;
+}
+.nav-heading {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  padding-left: 23px;
+}
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-content {
+  list-style: none;
+  display: inline-block;
+  font-weight: 500;
+  margin: 15px;
+  font-size: 24px;
+}
+.nav-images {
+  width: 50%;
+  height: 50%;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  margin-right: 30px;
+}
+a:hover {
+  text-decoration: underline;
+}
+.link-section,
+.slider {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-around;
+}
+.first-section {
+  margin-top: 20px;
+}
+
+.first-heading {
+  color: #365314;
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 2%;
+}
+.first-details {
+  font-size: 10px;
+  width: 40%;
+}
+
+/* Second Section */
+.second-details {
+  width: 50%;
+}
+.second-section-left {
+  width: 100%;
+  display: flex;
+  gap: 21px;
+}
+
+.image-section-left {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+.image-section-left img {
+  height: 70%;
+}
+
+.image-section-right {
+  width: 67%;
+  height: 70%;
+}
+
+.image-section-right img {
+  width: 100%;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details-date-time {
+  display: flex;
+  gap: 5%;
+}
+
+.first-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.first-details-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.box-review {
+  color: #365314;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.box-icon {
+  width: 26%;
+  height: 3rem;
+  object-fit: contain;
+}
+.time details {
+  display: flex;
+  gap: 20px;
+}
+
+.details-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.details-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.details-desc {
+  font-size: 17px;
+  font-weight: 500;
+}
+.box-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 100%;
+  height: 146px;
+}
+.box {
+  border: 2px solid #365314;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reservation {
+  border: 2px solid #365314;
+  color: #365314;
+  width: 98%;
+  height: 50px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 15px;
+  margin-left: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Slider Section */
+
+/* Slider heading */
+.slider {
+  margin-top: 30px;
+}
+
+.slider-title-name {
+  color: #365314;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.button-icon {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #365314;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.slider-section {
+  height: 20rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-section-slider {
+  height: inherit;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.slider-box {
+  width: 100%;
+
+  display: flex;
+  gap: 3rem;
+}
+
+.slider-section-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.business-card {
+  border: 1px solid #365314;
+  width: 34.375rem;
+  /* height: inherit; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.business-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.business-card-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.business-card-title {
+  color: #3f6212;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.business-card-title span {
+  color: #57606a;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.business-card-detail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn-more-details a{
+text-decoration: none;
+color: #365314;
+}
+.btn-more-details:hover {
+   background-color:365314 ;
+}
+
+.btn-more-details:hover a {
+   color: white;
+}
+.business-card-description {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0px 20px 0px 20px;
+}
+
+.btn-more-details {
+  border: 2px solid #365314;
+  color: #365314;
+  background-color: #ffffff;
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* footer section */
+footer {
+  margin-top: 10%;
+  width: 100%;
+  height: 400px;
+  background-color: #000000;
+}
+.footer-section {
+  color: #365314;
+  font-size: 45px;
+  padding-top: 30px;
+  font-weight: 500;
+  margin: 5%;
+}
+.footer-paragraph {
+  text-align: center;
+}
+.footer-images {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content {
+  font-size: 18px;
+}
+.footer-heading {
+  font-size: 15px;
+  color: white;
+}
+
+.footer-heading-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-email {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logo {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-contact {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.list {
+  font-size: 15px;
+  list-style: none;
+}
+.form-line {
+  width: 205%;
+  height: 2px;
+  border: 2px solid white;
+  margin: 5%;
+}
+
+.bottom-section {
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.footer-line {
+  border: 1px solid #ffffff;
+  width: 87rem;
+}
+
+.footer-bottom-info {
+  color: #3f6212;
+  font-size: 18px;
+}
